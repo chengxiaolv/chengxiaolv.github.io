@@ -1,1 +1,13 @@
-<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>chengxiaolv.io</title><link href=/static/css/app.4bd1fa39c6adc3e7c47b92f869a31a80.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.2420502e2b2c7f321d64.js></script><script type=text/javascript src=/static/js/app.dd2d18b750dc789e95a5.js></script></body></html>
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>chengxiaolv</title><link rel=stylesheet type=text/css href=./static/reset.css><link href=/static/css/app.8215445396fdfa7e2f229df0f5801052.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.2ae2e69a05c33dfc65f8.js></script><script type=text/javascript src=/static/js/vendor.688797d01598aac8a661.js></script><script type=text/javascript src=/static/js/app.04765e17ce94bd629f72.js></script></body></html><script>(function(doc, win) { //设置rem值。
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                //这里是假设在750px宽度设计稿的情况下，1rem = 30px；
+                docEl.style.fontSize = 30 * (clientWidth / 750) + 'px';
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);</script>
